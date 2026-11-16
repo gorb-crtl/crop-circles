@@ -1,0 +1,36 @@
+; Engine configuration file.
+; Crop Circles - Godot 4 project.
+
+config_version=5
+
+[application]
+
+config/name="Crop Circles"
+config/description="An idle game about extraterrestrial vandalism."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+config/icon="res://assets/sprites/icon.png"
+
+[autoload]
+
+Game="*res://scripts/game.gd"
+Sfx="*res://scripts/sfx.gd"
+Music="*res://scripts/music.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[gui]
+
+timers/tooltip_delay_sec=0.25
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.03, 0.025, 0.035, 1)
